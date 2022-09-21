@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    <style>
+       *{
+    padding:0;
+    margin:0;
+    box-sizing:border-box ;
+    text-decoration:none;
+    list-style:none;
+   
+}
+h1{
+    font-family:cursive;
+    padding:20px 10px ;
+    font-size:35px;
+    color:white
+}
+nav{
+    
+    
+    background-image:linear-gradient(to bottom,black, #000032);
+    height:100px;
+    width:100%;
+}
+nav ul{
+    float:right ;
+    font-size:30px;
+    font-family:Monospace,Courier;
+    margin-top:-55px;
+}
+nav ul li{
+    display:inline-block; 
+    top: 50px;
+    
+}
+nav ul li a{
+    color:white;
+    border-radius:5px;
+    margin: -50px 50px ;
+    transition:all .5s;
+}
+a.active,a:hover{
+    color:black;
+    background-color:#f1f1f1;
+}
+.checkbtn{
+    color:white;
+    font-size:20px;
+    float:right;
+    margin:23px 10px;
+    font-weight:bold;
+    display:none;  
+}
+#check{
+    display:none;
+}
+
+@media (max-width: 952px){
+h1{
+font-size: 30px;
+padding-left:25px;
+}
+nav ul li a{
+font-size: 16px;
+}
+}
+@media(max-width: 858px){
+.checkbtn{
+ margin:35px 25px;
+ display: block;
+}
+ul{
+position: fixed;
+width: 100%;
+height: 100vh;
+background: #2c3e50;
+top: 150px;
+left: -105%;
+text-align: center;
+transition: all .5s;
+}
+nav ul li{
+display: block;
+margin: 50px 0;
+line-height: 30px;
+}
+nav ul li a{
+font-size: 20px;
+}
+a:hover,a.active{
+background: none;
+color: #0082e6;
+}
+
+#check:checked~ul{
+left: 0;
+}
+}   
+section{
+  
+background: url("https://i.ibb.co/8KVCMHc/images-2.jpg") no-repeat;
+
+background-size: cover;
+
+height: calc(100vh - 80px);
+
+}
+
+.ytd{
+  color: white;
+  font-family: Courier,Monospace;
+  text-align: center;
+  padding: 60px;
+}
+
+    </style>
+    <body>
+       <nav>
+       <input type="checkbox" id="check">
+           <label for="check" class=checkbtn>
+             <span class="material-symbols-outlined"> menu </span> 
+             </label>
+           <h1>Surveyy</h1>
+           <ul class="ul">
+               <li><a href="#" class="active" >Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+           </ul>
+           
+       </nav> 
+      <section>
+      <h2 class=ytd> Change The Width Of Your Device To See Desktop And Mobile View <br></br><hr><br> Yet To Be Developed.</h2>
+      </section>
+    </body>
+</html>
